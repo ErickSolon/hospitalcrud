@@ -4,8 +4,6 @@ import br.com.crud.Hospital.models.DTOs.FuncionariosDTO;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.List;
-
 @Entity
 @Table(name = "funcionarios")
 @AllArgsConstructor

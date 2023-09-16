@@ -1,6 +1,6 @@
-package br.com.crud.Hospital.Services;
+package br.com.crud.Hospital.services;
 
-import br.com.crud.Hospital.Exceptions.FuncionarioNotFoundException;
+import br.com.crud.Hospital.exceptions.FuncionarioNotFoundException;
 import br.com.crud.Hospital.models.DTOs.FuncionariosDTO;
 import br.com.crud.Hospital.models.DTOs.SetorDTO;
 import br.com.crud.Hospital.models.Funcionarios;
@@ -9,8 +9,6 @@ import br.com.crud.Hospital.repositories.FuncionariosRepository;
 import br.com.crud.Hospital.repositories.SetorRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
-import org.hibernate.annotations.NotFound;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

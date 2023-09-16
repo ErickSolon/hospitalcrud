@@ -1,9 +1,8 @@
-package br.com.crud.Hospital.Controllers;
+package br.com.crud.Hospital.controllers;
 
-import br.com.crud.Hospital.Exceptions.FuncionarioNotFoundException;
-import br.com.crud.Hospital.Services.HospitalService;
+import br.com.crud.Hospital.exceptions.FuncionarioNotFoundException;
+import br.com.crud.Hospital.services.HospitalService;
 import br.com.crud.Hospital.models.DTOs.FuncionariosDTO;
-import jakarta.websocket.server.PathParam;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/hospital")
 @RequiredArgsConstructor
+@CrossOrigin
 public class HospitalController {
     private final HospitalService service;
 
